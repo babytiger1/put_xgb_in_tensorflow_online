@@ -1,0 +1,29 @@
+train:
+  model_dir: ./model
+  train_data: data/breast_cancer_train.csv
+  eval_data: data/breast_cancer_eval.csv
+  train_epochs: 50
+  epochs_per_eval: 3
+  batch_size: 20
+  checkpoint_path:
+  num_examples: 1000
+  multivalue: 1
+  num_parallel_calls: 8
+  profiler_save_steps: 2
+  model_timeline_dir: ./export/xfm_output/timeline/train
+  evaluate_timeline_dir: ./export/xfm_output/timeline/eval
+
+runconfig:
+  tf_random_seed: 123
+  save_summary_steps: 1000
+  save_checkpoints_steps: 100
+  save_checkpoints_secs:
+  keep_checkpoint_max: 5
+  keep_checkpoint_every_n_hours: 1
+  log_step_count_steps: 1000
+
+
+
+
+
+

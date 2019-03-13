@@ -1,0 +1,282 @@
+
+
+# TODO: support all tf.feature_column.
+
+D1:
+  type: continuous
+  transform: min_max
+  parameter:
+    normalization: [0,5775]
+    boundaries: [3 ,10, 20, 100, 500, 2000, 4000]
+
+D2:
+  type: continuous
+  transform: min_max
+  parameter:
+    normalization: [-3,257675]
+    boundaries: [0, 50 ,100, 150, 500, 1000, 4000, 10000, 50000, 150000]
+
+D3:
+  type: continuous
+  transform: min_max
+  parameter:
+    normalization: [0,65535]
+    boundaries: [5, 10, 20, 50, 100, 1000, 8000, 30000]
+
+D4:
+  type: continuous
+  transform: min_max
+  parameter:
+    normalization: [0,969]
+    boundaries: [2, 8, 15, 50, 200, 500]
+
+D5:
+  type: continuous
+  transform: min_max
+  parameter:
+    normalization: [0,23159456]
+    boundaries: [1000, 3000, 7000, 12000, 20000, 100000, 1000000, 10000000]
+
+D6:
+  type: continuous
+  transform: min_max
+  parameter:
+    normalization: [0,431037]
+    boundaries: [10, 50, 100, 200, 1000, 5000, 20000, 100000]
+
+D7:
+  type: continuous
+  transform: min_max
+  parameter:
+    normalization: [0,56311]
+    boundaries: [2, 5, 10, 20, 50, 200, 1000, 5000, 20000]
+
+D8:
+  type: continuous
+  transform: min_max
+  parameter:
+    normalization: [0,6047]
+    boundaries: [2, 5, 10, 20, 100, 500, 2000]
+
+D9:
+  type: continuous
+  transform: min_max
+  parameter:
+    normalization: [0,29019]
+    boundaries: [10, 50, 150, 500, 1200, 5000, 15000]
+
+D10:
+  type: continuous
+  transform: min_max
+  parameter:
+    normalization: [0,11]
+    boundaries: [0.1, 0.3, 1, 3, 6, 9]
+
+D11:
+  type: continuous
+  transform: min_max
+  parameter:
+    normalization: [0,231]
+    boundaries: [10, 100]
+
+D12:
+  type: continuous
+  transform: min_max
+  parameter:
+    normalization: [0,4008]
+    boundaries: [5, 100, 1000]
+
+D13:
+  type: continuous
+  transform: min_max
+  parameter:
+    normalization: [0,7393]
+    boundaries: [2, 15, 100, 500, 2000]
+
+C1:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file14'
+    vocabulary_size: 1460
+
+C2:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file15'
+    vocabulary_size: 583
+
+C3:
+  type: category
+  transform: hash_bucket
+  parameter: 10000
+
+C4:
+  type: category
+  transform: hash_bucket
+  parameter: 10000
+
+C5:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file18'
+    vocabulary_size: 305
+
+C6:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file19'
+    vocabulary_size: 23
+
+C7:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file20'
+    vocabulary_size: 12517
+
+C8:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file21'
+    vocabulary_size: 633
+
+C9:
+  type: category
+  transform: vocab
+  parameter: [a73ee510, 7cc72ec2, a18233ea]
+
+
+C10:
+  type: category
+  transform: hash_bucket
+  parameter: 10000
+
+C11:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file24'
+    vocabulary_size: 5683
+
+C12:
+  type: category
+  transform: hash_bucket
+  parameter: 10000
+
+C13:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file26'
+    vocabulary_size: 3194
+
+C14:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file27'
+    vocabulary_size: 27
+
+C15:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file28'
+    vocabulary_size: 14992
+
+C16:
+  type: category
+  transform: hash_bucket
+  parameter: 10000
+
+C17:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file30'
+    vocabulary_size: 10
+
+C18:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file31'
+    vocabulary_size: 5652
+
+C19:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file32'
+    vocabulary_size: 2172
+
+C20:
+  type: category
+  transform: vocab
+  parameter: [b1252a9d, 5840adea, a458ea53]
+
+C21:
+  type: category
+  transform: hash_bucket
+  parameter: 10000
+
+C22:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file35'
+    vocabulary_size: 17
+
+C23:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file36'
+    vocabulary_size: 15
+
+C24:
+  type: category
+  transform: hash_bucket
+  parameter: 10000
+
+C25:
+  type: category
+  transform: file
+  parameter:
+    vocabulary_file: '../data/data_stat/feature_file38'
+    vocabulary_size: 104
+
+C26:
+  type: category
+  transform: hash_bucket
+  parameter: 10000
+
+multivalue:
+  type: category
+  transform: hash_bucket
+  parameter: 10000
+
+
+
+
+
+
+#Request_id;category;hash_bucket;500000
+#account_id;category;hash_bucket;1000
+#dt;category;vocab;0
+#host_name;category;hash_bucket;30
+#request_tm;category;hash_bucket;1000
+#log_version;category;vocab;1
+#pay;continuous;discretize;100000,200000,300000,500000,1000000,1500000
+#ecpm;continuous;discretize;50000,100000,200000,500000,1000000,2000000,5000000,10000000
+#ecpm2;continuous;discretize;50000,100000,200000,500000,1000000,2000000,5000000,10000000
+#winprc;continuous;discretize;500,1000,2000,5000,10000,50000,100000,150000,200000,250000,300000,350000,400000,500000
+#ctr;continuous;discretize;10000,20000,30000,40000,50000,60000,70000,80000,90000,100000,110000,120000,130000,140000,150000,160000,170000,180000,190000,200000,210000,220000,230000
+#rpid;category;vocab;0
+#market;category;vocab;0,1
+#combine_id;category;hash_bucket;220000

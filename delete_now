@@ -1,0 +1,34 @@
+from __future__ import print_function
+import tensorflow as tf
+
+def tf__square_if_positive(x):
+  try:
+    with ag__.function_scope('square_if_positive'):
+
+      def if_true():
+        with ag__.function_scope('if_true'):
+          x_1, = x,
+          x_1 = x_1 * x_1
+          return x_1,
+
+      def if_false():
+        with ag__.function_scope('if_false'):
+          x_2, = x,
+          x_2 = 0.0
+          return x_2,
+      x = ag__.utils.run_cond(tf.greater(x, 0), if_true, if_false)
+      return x
+  except:
+    ag__.rewrite_graph_construction_error(ag_source_map__)
+
+
+
+tf__square_if_positive.autograph_info__ = {}
+
+with tf.Graph().as_default():  
+  # The result works like a regular op: takes tensors in, returns tensors.
+  # You can inspect the graph using tf.get_default_graph().as_graph_def()
+  g_out1 = tf__square_if_positive(tf.constant( 9.0))
+  g_out2 = tf__square_if_positive(tf.constant(-9.0))
+  with tf.Session() as sess:
+    print('Graph results: %2.2f, %2.2f\n' % (sess.run(g_out1), sess.run(g_out2)))
